@@ -584,6 +584,7 @@ input[type=text], select, textarea {
     justify-content: center;
     background-color: rgb(218, 216, 216);
     padding-bottom: 20px;
+    padding-top: 50px;
   }
 
 
@@ -656,4 +657,99 @@ button i{
 
 .spacing{
   margin-bottom: 50px;
+}
+
+/*TRGOVINA*/
+
+#banner{
+  height: 500px;
+  background-size: cover;
+  background-image: url('images/bannnnnner.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner .text{
+  background-color: white;
+  opacity: 0.7;
+  color: green;
+  font-size: 36px;
+  text-align: center;
+}
+
+#grid{
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.grid-item {
+  margin-top: 50px;
+  flex-basis: 30%; 
+  height: 750px; 
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid-item:hover {
+  background-color: #D9D9D9;
+}
+
+.grid-item:hover img {
+  filter: brightness(85%); /* Dim the image on hover */
+}
+
+.grid-item img{
+  height: 300px;
+  width: 100%;
+}
+
+.tekst #opis{
+  height: 180px;
+}
+
+@media (max-width: 1200px) {
+  .grid-item {
+    flex-basis: 100%; 
+  }
+}
+
+.grid-item #naslov{
+  padding-top: 10px;
+  text-align: left;
+  font-size: 24px;
+}
+
+.grid-item .tekst{
+  width: 300px;
+  text-align: left;
+  justify-content: left;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.rounded-button2{
+  border-radius: 20px; 
+  padding: 15px; 
+  width: 100%;
+  background-color: #1E3050; 
+  border: none; 
+  cursor: pointer;
+  color: white;
+  transition: background-color 1s;
+}
+
+.rounded-button2:hover{
+  background-color: #04AA6D;
 }
